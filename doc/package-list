@@ -1,0 +1,10 @@
+com.test.login
+com.test.login.config
+com.test.login.controller
+com.test.login.dao
+com.test.login.dto
+com.test.login.entity
+com.test.login.exception
+com.test.login.integration
+com.test.login.service
+com.test.login.serviceimpl

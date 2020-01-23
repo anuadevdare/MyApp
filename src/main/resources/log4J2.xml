@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<!-- Logs pattern on console -->
+			<PatternLayout
+				pattern="%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable" />
+		</Console>
+
+		<RollingFile name="normallogsfile"
+			fileName="logs/alllogs/logs.log"
+			filePattern="logs/alllogs/logs-%d{yyyy-MM-dd}-%i.log">
+			!-- Logs pattern in created file on the location logs -->
+			<PatternLayout>
+				<pattern>%d %p %C{1.} [%t] %m%n</pattern>
+			</PatternLayout>
+			<!-- Rolling file after 1MB -->
+			<SizeBasedTriggeringPolicy size="1048576" />
+			<!--set value of max roll over strategy file -->
+			<DefaultRolloverStrategy max="10" />
+			-->
+		</RollingFile>
+		<RollingFile name="errorlogsfile"
+			fileName="logs/errorlogs/errorlogs.log"
+			filePattern="logs/errorlogs/errorlogs-%d{yyyy-MM-dd}-%i.log">
+			!-- Logs pattern in created file on the location logs -->
+			<PatternLayout>
+				<pattern>%d %p %C{1.} [%t] %m%n</pattern>
+			</PatternLayout>
+			<!-- Rolling file after 1MB -->
+			<SizeBasedTriggeringPolicy size="1048576" />
+			<!--set value of max roll over strategy file -->
+			<DefaultRolloverStrategy max="10" />
+			-->
+		</RollingFile>
+	</Appenders>
+
+	<Loggers>
+		<!-- LOG everything at INFO level -->
+		<Root level="info">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="normallogsfile"/>
+			<AppenderRef ref="errorlogsfile" level="error"/>
+		</Root>
+		
+		<!-- LOG "com.test.login*" at TRACE level -->
+		<Logger name="com.test.login" level="debug"></Logger>
+	</Loggers>
+
+</Configuration>

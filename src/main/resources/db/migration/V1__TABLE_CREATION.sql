@@ -1,0 +1,20 @@
+CREATE TABLE USER(
+  uid BIGINT(10) NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(45) NOT NULL,
+  last_name VARCHAR(45) NULL,
+  email_id VARCHAR(45) NOT NULL,
+  password LONGTEXT NOT NULL,
+  password_hint VARCHAR(45) NULL,
+  PRIMARY KEY (uid),
+  UNIQUE INDEX email_id_UNIQUE (email_id ASC) VISIBLE);
+
+CREATE TABLE EXPENSE(
+  eid BIGINT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  user_id BIGINT(10),
+  expense_title VARCHAR(45) NOT NULL,
+  expense_category VARCHAR(45) NOT NULL,
+  expense_description VARCHAR(45) NULL,
+  expense_amount DECIMAL(15,4) NOT NULL,
+  expense_date DATE NOT NULL);
+  #CONSTRAINT user_expense FOREIGN KEY (user_id) REFERENCES USER (uid) ON UPDATE CASCADE ON DELETE CASCADE);
+  

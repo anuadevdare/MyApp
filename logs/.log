@@ -1,0 +1,35 @@
+2019-11-05 19:37:04,506 INFO o.s.b.StartupInfoLogger [restartedMain] Starting LoginDemoApplication on AnitaD-PC with PID 11392 (D:\ASpring\LoginDemo\target\classes started by Anita in D:\ASpring\LoginDemo)
+2019-11-05 19:37:04,517 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 19:37:04,517 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-11-05 19:37:04,797 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 19:37:04,808 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10ms. Found 2 repository interfaces.
+2019-11-05 19:37:04,846 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81f57a1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 19:37:04,936 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2019-11-05 19:37:04,937 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2019-11-05 19:37:04,937 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-11-05 19:37:04,937 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 19:37:04,949 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-11-05 19:37:04,949 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 430 ms
+2019-11-05 19:37:04,996 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2019-11-05 19:37:05,003 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2019-11-05 19:37:05,008 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-05 19:37:05,015 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-05 19:37:05,080 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-05 19:37:05,092 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-11-05 19:37:05,117 INFO o.h.h.i.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-11-05 19:37:05,221 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-05 19:37:05,260 INFO s.d.s.w.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 19:37:05,305 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-05 19:37:05,359 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-11-05 19:37:05,360 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-11-05 19:37:05,364 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-11-05 19:37:05,392 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2019-11-05 19:37:05,394 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2019-11-05 19:37:05,395 INFO o.s.b.StartupInfoLogger [restartedMain] Started LoginDemoApplication in 0.919 seconds (JVM running for 127.584)
+2019-11-05 19:37:05,397 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-11-05 19:37:49,165 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-22] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-05 19:37:49,170 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-22] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-05 19:37:49,173 INFO c.z.h.HikariDataSource [Thread-22] HikariPool-4 - Shutdown initiated...
+2019-11-05 19:37:49,188 INFO c.z.h.HikariDataSource [Thread-22] HikariPool-4 - Shutdown completed.
